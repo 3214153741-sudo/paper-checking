@@ -2,7 +2,7 @@ import re
 from collections import Counter
 
 def preprocess(text):
-    """文本预处理：去除标点、转为小写、分词"""
+    """此处是文本预处理：去除标点、转为小写、分词"""
     # 只保留中文、英文、数字
     text = re.sub(r'[^\u4e00-\u9fa5a-zA-Z0-9]', '', text)
     return list(text)
@@ -31,7 +31,7 @@ def calc_similarity(text1, text2):
     return sim
 
 if __name__ == "__main__":
-    # 示例文本
+    # 测试例子1
     doc1 = "人工智能是一门研究如何使机器模拟人类智能的学科"
     doc2 = "人工智能是研究让机器模拟人的智能的一门学科"
 
